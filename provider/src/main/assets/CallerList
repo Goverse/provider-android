@@ -1,0 +1,17 @@
+{
+    "whiteCallerList" : [
+        {
+            "packageName" : "com.eg.android.AlipayGphone",
+            "sha1" : ["84:0F:34:3A:0E:FC:32:5B:A0:BF:75:DA:C8:35:E4:D5:87:03:34:35"],
+            "scopes": ["READ_SPORT_DATA"]
+        }
+    ] ,
+
+    "callerList" : [
+        {
+            "packageName" : "com.eg.android.AlipayGphone",
+            "sha1" : ["84:0F:34:3A:0E:FC:32:5B:A0:BF:75:DA:C8:35:E4:D5:87:03:34:35"],
+            "scopes": ["READ_SPORT_DATA"]
+        }
+    ]
+}

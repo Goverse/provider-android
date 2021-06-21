@@ -1,0 +1,3 @@
+include ':provider'
+include ':app'
+rootProject.name = "ProviderProject"
