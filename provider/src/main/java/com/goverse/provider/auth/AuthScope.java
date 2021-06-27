@@ -35,27 +35,6 @@ public class AuthScope {
 
     }
 
-    /**
-     * save granted scopes
-     * @param callerPackageName callerPackageName
-     * @param scopeSet scopeSet
-     */
-    public static void saveCallerGrantScope(String callerPackageName, Set<String> scopeSet) {
-        Log.d("ContentScope", "saveCallerGrantScope: " + callerPackageName);
-        // TODO: 2021/6/21  saveCallerGrantScope
-    }
-
-    /**
-     * get all scopes has granted
-     * @param callerPackageName callerPackageName
-     * @return all scopes
-     */
-    public static Set<String> getCallerGrantScope(String callerPackageName) {
-        Log.d("ContentScope", "getCallerGrantScope: " + callerPackageName);
-        // TODO: 2021/6/21  getCallerGrantScope
-        return null;
-    }
-
     public static Map<String, Configuration> getCallerListConfigMap() {
         return callerListConfigMap;
     }

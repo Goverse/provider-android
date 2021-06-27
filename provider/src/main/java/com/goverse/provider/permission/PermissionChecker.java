@@ -88,13 +88,6 @@ public class PermissionChecker {
         return res;
     }
 
-    private boolean checkScopeGrantedByUser(String callerPackageName, String scope) {
-
-        Set<String> callerGrantScope = AuthScope.getCallerGrantScope(callerPackageName);
-        if (callerGrantScope == null || !callerGrantScope.contains(scope)) return false;
-        return true;
-    }
-
     private boolean check(byte flag, String callerPackageName, String scope) {
         Log.d(TAG, "check---flag: " + flag + ",callerPackageName: " + callerPackageName);
         String appPackageName = mContext.getApplicationInfo().packageName;
@@ -141,7 +134,7 @@ public class PermissionChecker {
                 List<String> sha1 = configuration.sha1;
                 List<String> scopes = configuration.scopes;
 
-                if (!checkCallerSha1Valid(callerPackageName, sha1) || !checkScopeGrantedByUser(callerPackageName, scope)) return false;
+                if (!checkCallerSha1Valid(callerPackageName, sha1)) return false;
                 if (scopes != null && scopes.contains(scope)) return true;
             }
         } catch (Exception e) {
